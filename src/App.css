@@ -58,3 +58,12 @@ body {
 .debug-border {
   border: 1px solid red !important;
 }
+
+
+
+/* ▼▼▼ MOBILE-ONLY ADJUSTMENTS ▼▼▼ */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0 10px; /* Prevents content from touching screen edges */
+  }
+}
