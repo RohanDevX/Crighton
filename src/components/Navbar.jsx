@@ -26,8 +26,8 @@ const Navbar = () => {
           <li><a href="/press">PRESS</a></li>
           <li className="slash">/</li>
           <li><a href="/contact">CONTACT</a></li>
-          <li className="slash">/</li>
-          <li><a href="/owners">OWNERS</a></li>
+          {/* <li className="slash">/</li>
+          <li><a href="/owners">OWNERS</a></li> */}
         </ul>
 
         {/* Mobile Hamburger */}

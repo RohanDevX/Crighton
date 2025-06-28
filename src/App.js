@@ -4,6 +4,7 @@ import Slider from './components/Slider';
 import './App.css';
 import Brochure from './components/Brochure';
 import EngineSection from './components/EngineSection';
+import SuperbikeStats from './components/SuperbikeStats';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Slider /> 
       <Brochure />
       <EngineSection />
+      <SuperbikeStats/>
       
     </div>
       

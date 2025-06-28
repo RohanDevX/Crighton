@@ -1,0 +1,135 @@
+.superbike-layout {
+  font-family: 'Orbitron', 'Montserrat', sans-serif; /* Futuristic + elegant combo */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: #000000;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 100%); /* Subtle gradient */
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 25px; */
+  position: relative;
+}
+
+.superbike-image {
+  max-width: 100%;
+  height: 370px;
+  border-radius: 12px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+   /* 3D tilt effect */
+  transition: transform 0.5s ease;
+}
+
+
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.stats-row::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #ff0000, transparent); /* Decorative line */
+}
+
+.stat-block {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #494848); /* Gradient black */
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(61, 34, 34, 0.4);
+  border: 1px solid #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-block::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(171, 18, 18, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.stat-block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+}
+
+.stat-block:hover::after {
+  opacity: 1;
+}
+
+.stat-large {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #ff2a2a;
+  line-height: 1.2;
+  text-shadow: 0 0 10px rgba(255, 42, 42, 0.5);
+  letter-spacing: 1px;
+}
+
+.stat-medium {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 15px 0 20px 0;
+  color: #ff2a2a;
+  line-height: 1.2;
+  text-shadow: 0 0 8px rgba(255, 77, 77, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.stat-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Add this to your HTML head or main CSS file */
+ @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .stats-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stat-block {
+    padding: 25px 15px;
+    margin-bottom: 0;
+  }
+  
+  .stat-large {
+    font-size: 2.2rem;
+  }
+  
+  .stat-medium {
+    font-size: 1.6rem;
+    margin: 10px 0 15px 0;
+  }
+  
+  .superbike-image {
+    transform: none;
+  }
+}
