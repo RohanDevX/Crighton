@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   z-index: 999;
-  /* border-top: 3px solid #fff; */ /* Removed the white line */
 }
 
 .navbar-container {
@@ -29,15 +28,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 30px; /* 👈 this adds space after OWNERS */
+  padding-right: 30px; 
 }
 
 
 .navbar-links li {
   margin: 0 5px;
-  font-family: 'Roboto', sans-serif;  /* New Font */
-  font-weight: 600;                   /* Thinner Weight */
-  font-size: 12px;                    /* Reduced size if you want thinner feel */
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 600;               
+  font-size: 12px;                 
   letter-spacing: 1px;
  
 }
@@ -91,7 +90,7 @@
   }
 }
 
-/* ===== MOBILE STYLES ONLY ===== */
+/* MOBILE STYLES */
 .hamburger,
 .mobile-menu {
   display: none;
@@ -100,9 +99,9 @@
 
 @media (max-width: 768px) {
   .mobile-menu-links a.active {
-    color: #e6004c !important; /* Your brand red */
+    color: #e6004c !important; 
   }
-  /* 1. Full-width navbar fixes */
+  
   .navbar {
     width: 100vw;
     left: 0;
@@ -119,13 +118,13 @@
     margin: 0 !important;
   }
 
-  /* 2. Logo adjustments */
+  /* 2. Logo */
   .navbar-logo img {
     height: 17px;
     margin: 26px 0 15px;
   }
 
-  /* 3. Hamburger fixes */
+  
   .hamburger {
     display: flex;
     flex-direction: column;
@@ -186,7 +185,6 @@
     overflow-x: hidden;
   }
 
-  /* Rest of your existing mobile styles... */
   .mobile-menu-content {
     display: flex;
     height: 100%;
@@ -222,13 +220,6 @@
 
   }
 
-/* .mobile-menu-links li:not(:last-child) {
-    border-bottom: 4px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
-  margin-bottom:4px;} */
-
-
-  /* Staggered animations */
   .mobile-menu-links li:nth-child(1) { animation-delay: 0.1s; }
   .mobile-menu-links li:nth-child(2) { animation-delay: 0.15s; }
   .mobile-menu-links li:nth-child(3) { animation-delay: 0.2s; }

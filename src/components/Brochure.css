@@ -1,4 +1,4 @@
-/* Flexbox-Cleaned and Responsive - Same Visual, No Manual left/top */
+
 
 .brochure-outer {
   background-color: white;
@@ -6,13 +6,12 @@
   width: 100%;
   position: relative;
   z-index: 10;
-  /* border: 5px solid rgb(245, 245, 245) !important; */
 }
 
 .brochure-inner {
   background-color: #ff0044;
-  width: 100%;           /* Fill parent width */
-  max-width: 1455px;     /* Never exceed 1455px */
+  width: 100%;          
+  max-width: 1455px;     
   margin: 0 auto;
   height: 150px;
   display: flex;
@@ -32,7 +31,7 @@
 }
 
 .brochure-image img {
-  max-width: 100%; /* prevent image from overflowing its container */
+  max-width: 100%; 
   height: auto;
   position: absolute;
   top: -170px;
@@ -42,14 +41,14 @@
 
 .brochure-content {
   flex: 1;
-  position: relative; /* Parent is relative for all absolute children */
+  position: relative;
   padding-left: 120px;
 }
 
 .brochure-content .line1 {
   position: absolute;
-  top: -20px;   /* adjust as needed */
-  left: 50px;  /* adjust as needed */
+  top: -20px;  
+  left: 50px;  
   color: white;
   letter-spacing: 3px;
   font-weight: 600;
@@ -59,8 +58,8 @@
 
 .brochure-content .line2 {
   position: absolute;
-  top: 15px;   /* adjust as needed */
-  left: 70px;  /* adjust as needed */
+  top: 15px;   
+  left: 70px;  
   color: black;
   font-weight: 800;
   letter-spacing: 3px;
@@ -69,9 +68,9 @@
 }
 
 .download-btn {
-  position: absolute; /* Now you can use top/left in px */
-  top: 50px;   /* Adjust as per your need */
-  left: 80px;   /* Adjust as per your need */
+  position: absolute; 
+  top: 50px; 
+  left: 80px;   
   padding: 8px 12px;
   border: 2px solid white;
   color: white;

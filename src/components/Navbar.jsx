@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo - smaller and left-aligned */}
+        {/* Logo to be at left-aligned */}
         <div className="navbar-logo">
           <img 
             src="https://cdn.prod.website-files.com/6176a864abe8b65b106b98b3/617957f96c23676ea1577f04_CtnLogoWhite.svg" 
@@ -15,7 +15,7 @@ const Navbar = () => {
           />
         </div>
 
-        {/* Desktop Navigation (unchanged) */}
+        {/* Desktop Navigation */}
         <ul className="navbar-links">
           <li><a href="/" className="active">HOME</a></li>
           <li className="slash">/</li>
@@ -26,8 +26,6 @@ const Navbar = () => {
           <li><a href="/press">PRESS</a></li>
           <li className="slash">/</li>
           <li><a href="/contact">CONTACT</a></li>
-          {/* <li className="slash">/</li>
-          <li><a href="/owners">OWNERS</a></li> */}
         </ul>
 
         {/* Mobile Hamburger */}

@@ -16,7 +16,7 @@ const Slider = () => {
         onSwiper={(swiper) => { swiperRef.current = swiper }}
         spaceBetween={30}
         centeredSlides={true}
-        speed={1100} // smoother slide
+        speed={1100} 
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
