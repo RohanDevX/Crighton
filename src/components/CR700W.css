@@ -1,0 +1,109 @@
+/* CR700W.css */
+.section {
+  width: 100%;
+  position: relative;
+}
+
+.bgmonogram {
+  background-color: #e6e6e6; /* Gray background */
+  background-image: url('../assets/cr.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.container1520pad60all {
+  width: 1420px;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.centrecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.textcentrepanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textred {
+  color: #d00; /* Red color */
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.textred span {
+  font-weight: 700;
+}
+
+.textwhite {
+  color: #000; /* Black text (change to #fff if on dark background) */
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.h3class {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Spacer classes */
+.spacer10 { height: 10px; }
+.spacer20 { height: 20px; }
+.spacer40 { height: 40px; }
+
+/* Button styles */
+.buttonblack {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.buttonblack:hover {
+  background-color: #333;
+}
+
+.w-button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container1520pad60all {
+    padding: 30px;
+  }
+  
+  .textred {
+    font-size: 1.5rem;
+  }
+  
+  .h3class {
+    font-size: 1.2rem;
+  }
+  
+  .textwhite {
+    font-size: 0.9rem;
+  }
+}

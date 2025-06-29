@@ -5,6 +5,8 @@ import './App.css';
 import Brochure from './components/Brochure';
 import EngineSection from './components/EngineSection';
 import SuperbikeStats from './components/SuperbikeStats';
+import HeedSection from './components/heed';
+// import CR700W from './components/CR700W';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
       <Brochure />
       <EngineSection />
       <SuperbikeStats/>
+      <HeedSection/>
+      {/* <CR700W/> */}
       
     </div>
       
