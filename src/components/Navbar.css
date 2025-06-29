@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   z-index: 999;
+  
 }
 
 .navbar-container {
@@ -14,6 +15,7 @@
   max-width: 100vw;
   padding: 0 30px;
   height: 50px;
+  
 }
 
 .navbar-logo img {
@@ -28,15 +30,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-right: 30px; 
+  padding-right: 20px; 
+  
 }
 
 
 .navbar-links li {
   margin: 0 5px;
-  font-family: 'Roboto', sans-serif;  
-  font-weight: 600;               
-  font-size: 12px;                 
+  font-family: 'Barlow', sans-serif;                
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 10px;                 
   letter-spacing: 1px;
  
 }
@@ -44,24 +48,23 @@
 
 .navbar-links .slash {
   color: #fff;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
   margin: 0 6px;
   user-select: none;
   display: inline-block; 
-  transform: rotate(30deg); 
+  transform: rotate(18deg); 
   margin: 20 20px; 
   vertical-align: middle;
   line-height: 1;
 }
 
 
-
-
 .navbar-links a {
   color: #fff;
   text-decoration: none;
   transition: color 0.2s;
+  
 }
 
 .navbar-links a.active {
@@ -118,7 +121,6 @@
     margin: 0 !important;
   }
 
-  /* 2. Logo */
   .navbar-logo img {
     height: 17px;
     margin: 26px 0 15px;
@@ -164,7 +166,6 @@
     width: 24px;
   }
 
-  /* 4. Mobile menu */
   .navbar-links {
     display: none !important;
   }

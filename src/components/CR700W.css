@@ -1,109 +1,158 @@
-/* CR700W.css */
-.section {
-  width: 100%;
+.crighton-banner {
   position: relative;
-}
-
-.bgmonogram {
-  background-color: #e6e6e6; /* Gray background */
-  background-image: url('../assets/cr.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 0;
-}
-
-.container1520pad60all {
-  width: 1420px;
-  margin: 0 auto;
-  padding: 60px;
-}
-
-.centrecontainer {
+  width: 100%;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
+  overflow: hidden;
 }
 
-.textcentrepanel {
+.crighton-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('../assets/cr.png') no-repeat center center/cover;
+  opacity: 0.26;
+  z-index: 0;
+}
+
+.crighton-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  opacity: 0.84; 
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2; 
+  color: #fff;
+  max-width: 1000px;
+  padding: 30px;
+}
+
+.brand-name {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.textred {
-  color: #d00; /* Red color */
-  font-size: 2rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  gap: 0;
+  font-size: 60px;
+  line-height: 55px;
+  font-family: termina, sans-serif;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #ff0046;
   margin: 0;
 }
 
-.textred span {
-  font-weight: 700;
+.brand-name span {
+  color: #ff0046;
+  font-weight: 600;
 }
 
-.textwhite {
-  color: #000; /* Black text (change to #fff if on dark background) */
-  font-size: 1rem;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.h3class {
-  font-size: 1.5rem;
-  font-weight: 700;
+.tagline {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin: 0;
+  color: #ffffff;
+  font-family: termina, sans-serif;
+  letter-spacing: 2.5px;
+  margin-top: 25px;
+  margin-bottom: 0;
 }
 
-/* Spacer classes */
-.spacer10 { height: 10px; }
-.spacer20 { height: 20px; }
-.spacer40 { height: 40px; }
+.description,
+.production-info,
+.option {
+  font-size: 16.5px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-family: interstate, sans-serif;
+}
 
-/* Button styles */
-.buttonblack {
-  display: inline-block;
-  background-color: #000;
+.limited-edition {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-family: termina, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+.pricing {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #ff0046;
+  margin-bottom: -10px;
+  font-family: termina, sans-serif;
+}
+
+.pricing span {
+  color: #ff0046;
+}
+
+.register-button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
   color: #fff;
-  padding: 15px 40px;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.buttonblack:hover {
-  background-color: #333;
-}
-
-.w-button {
-  font-family: inherit;
-  border: none;
   cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none; 
+  display: inline-block;
 }
 
-/* Responsive adjustments */
+.register-button:hover {
+  background-color: #fff;
+  color: #ff0046;
+}
+
+/* mobile */
 @media (max-width: 768px) {
-  .container1520pad60all {
-    padding: 30px;
+  .brand-name {
+    font-size: 2rem;
+    letter-spacing: 3px;
   }
-  
-  .textred {
-    font-size: 1.5rem;
-  }
-  
-  .h3class {
+
+  .tagline {
     font-size: 1.2rem;
   }
+
+  .pricing {
+    font-size: 1.2rem;
+  }
+
+  .description,
+  .production-info,
+  .option {
+    font-size: 0.95rem;
+  }
   
-  .textwhite {
-    font-size: 0.9rem;
+  .limited-edition {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 1.8rem;
+  }
+  
+  .banner-content {
+    padding: 20px;
   }
 }

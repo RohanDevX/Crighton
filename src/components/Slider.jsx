@@ -33,8 +33,7 @@ const Slider = () => {
         <SwiperSlide><img src="/images/3a.jpg" alt="Slide 3" /></SwiperSlide>
         <SwiperSlide><img src="/images/4a.jpg" alt="Slide 4" /></SwiperSlide>
       </Swiper>
-
-      {/* Custom Arrows */}
+      
       <div className="custom-prev" onClick={() => swiperRef.current.slidePrev()}></div>
       <div className="custom-next" onClick={() => swiperRef.current.slideNext()}></div>
     </div>

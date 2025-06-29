@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 5px;
   position: relative;
 }
 
@@ -38,7 +38,7 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(to right, transparent, #ff0000, transparent); /* red line */
+  background: linear-gradient(to right, transparent, #ff0046, transparent); /* red line */
 }
 
 .stat-block {
@@ -61,7 +61,7 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(circle, rgba(171, 18, 18, 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(97, 93, 93, 0.1) 0%, transparent 70%);
   opacity: 0;
   transition: opacity 0.5s ease;
 }
@@ -76,31 +76,25 @@
 }
 
 .stat-large {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-family: termina, sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
   margin: 0;
-  color: #ff2a2a;
+  color: #ff0046;
   line-height: 1.2;
-  text-shadow: 0 0 10px rgba(255, 42, 42, 0.5);
-  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  letter-spacing: 0px;
 }
 
-.stat-medium {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 15px 0 20px 0;
-  color: #ff2a2a;
-  line-height: 1.2;
-  text-shadow: 0 0 8px rgba(255, 77, 77, 0.4);
-  letter-spacing: 0.5px;
-}
 
 .stat-description {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
+  font-family: termina, sans-serif;
   line-height: 1.6;
-  margin: 0;
+  margin: 10px;
+  color: #2d2426;
+  font-size: 22px;
   font-weight: 400;
+  line-height: 20px;
 }
 
  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&family=Montserrat:wght@300;400;600;700&display=swap');

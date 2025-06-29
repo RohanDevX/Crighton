@@ -13,7 +13,7 @@ const HeedSection = () => {
   const images = useRef([]);
   
 
-  const scrollDistance = 6500;
+  const scrollDistance = 6200;
   const baseDampingFactor = 0.3; 
 
   const currentFrame = index => `/images/frames/heed000${100 + index}.png`;

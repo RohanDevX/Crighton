@@ -14,7 +14,14 @@ const Brochure = () => {
             <span className="line1">THE CRIGHTON CR700W</span><br />
             <span className="line2">BROCHURE IS HERE</span>
           </h2>
-          <a href="/" className="download-btn">Download PDF</a>
+          <a 
+            href="https://crighton.s3.amazonaws.com/Crighton-CR700W.pdf" 
+            className="download-btn"
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            Download PDF
+          </a>
         </div>
       </div>
     </div>

@@ -5,9 +5,8 @@ import './App.css';
 import Brochure from './components/Brochure';
 import EngineSection from './components/EngineSection';
 import SuperbikeStats from './components/SuperbikeStats';
+import CR700W from './components/CR700W';
 import HeedSection from './components/heed';
-// import CR700W from './components/CR700W';
-
 
 function App() {
   return (
@@ -18,8 +17,8 @@ function App() {
       <Brochure />
       <EngineSection />
       <SuperbikeStats/>
+      <CR700W/>
       <HeedSection/>
-      {/* <CR700W/> */}
       
     </div>
       
